@@ -1,5 +1,11 @@
-<h1 class="title">Blog Index</h1>
-
-<ol>
-	<li>Here we go!</li>
-</ol>
+<div class="container">
+	<div class="row">
+		<h1>A Blank Skeleton Blog</h1>
+	</div>
+	<div class="row">
+		<% @posts.each do |post| %>
+			<h3><%= link_to post.title, post %></h3>
+			<p><%= post.content %></p>
+		<% end %>
+	</div>
+</div>
