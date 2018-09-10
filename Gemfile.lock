@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/helios-technologies/skeleton-rails
+  revision: 6e46649d29006643b33c95b82bc9d0e28df2f8cc
+  specs:
+    skeleton-rails (1.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -192,7 +198,6 @@ GEM
     simple_form (4.0.1)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
-    skeleton-rails (1.2.0)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -243,7 +248,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   selenium-webdriver
   simple_form (~> 4.0, >= 4.0.1)
-  skeleton-rails (~> 1.2)
+  skeleton-rails!
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3

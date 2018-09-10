@@ -31,11 +31,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# This makes errors better looking...
-gem 'better_errors', '~> 2.5'
-
 # A modern CSS framework http://getskeleton.com/
-gem 'skeleton-rails', '~> 1.2'
+gem 'skeleton-rails', :git => 'https://github.com/helios-technologies/skeleton-rails'
 
 # Forms made easy....
 gem 'simple_form', '~> 4.0', '>= 4.0.1'
@@ -61,6 +58,9 @@ group :development do
 
   #Guard::LiveReload automatically reloads your browser when 'view' files are modified
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+
+  # This makes errors better looking...
+  gem 'better_errors', '~> 2.5'
 end
 
 group :test do
