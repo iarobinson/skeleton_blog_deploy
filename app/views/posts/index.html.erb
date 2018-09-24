@@ -6,6 +6,21 @@
 		<% @posts.each do |post| %>
 			<h3><%= link_to post.title, post %></h3>
 			<p><%= post.content %></p>
+
+
+			<div class="row">
+				<div class="four columns"
+					<li><%= link_to 'Show', post %></li>
+				</div>
+				<div class="four columns"
+					<li><%= link_to 'Edit', edit_post_path(post) %></li>
+				</div>
+				<div class="four columns"
+					<li><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure? This is irreversable' } %></li>
+				</div>
+			</div>
+
+
 		<% end %>
 	</div>
 </div>
