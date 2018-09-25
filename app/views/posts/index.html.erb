@@ -2,25 +2,14 @@
 	<div class="row">
 		<h1>A Blank Skeleton Blog</h1>
 	</div>
-	<div class="row">
-		<% @posts.each do |post| %>
+	<% @posts.each do |post| %>
+		<div class="row">
 			<h3><%= link_to post.title, post %></h3>
 			<p><%= post.content %></p>
+		</div>
 
-
-			<div class="row">
-				<div class="four columns"
-					<li><%= link_to 'Show', post %></li>
-				</div>
-				<div class="four columns"
-					<li><%= link_to 'Edit', edit_post_path(post) %></li>
-				</div>
-				<div class="four columns"
-					<li><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure? This is irreversable' } %></li>
-				</div>
-			</div>
-
-
-		<% end %>
-	</div>
+		<button class="button-primary blog-meld" ><%= link_to 'Show', post %></button>
+		<button class="button-primary blog-meld" ><%= link_to 'Edit', edit_post_path(post) %></button>
+		<button class="button-primary blog-meld" ><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure? This is irreversable' } %></button>
+	<% end %>
 </div>
